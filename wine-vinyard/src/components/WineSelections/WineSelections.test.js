@@ -3,7 +3,7 @@ import Adapter from 'enzyme-adapter-react-16'
 import {  configure, shallow } from 'enzyme'
 import {Link } from 'react-router-dom'
 
-import WineSelections from '../components/WineSelections/WineSelections'
+import WineSelections from './WineSelections'
 
 configure({ adapter: new Adapter() })
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import Adapter from 'enzyme-adapter-react-16'
 import { shallow, configure} from 'enzyme'
-import Title from '../components/Title/Title'
+import Title from './Title'
 
 configure({adapter: new Adapter()})
 

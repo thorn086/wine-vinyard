@@ -1,5 +1,5 @@
 import React from 'react'
-import Categories from '../pages/wine_categories/wine_categories'
+import Categories from './wine_categories'
 import { shallow, configure } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 

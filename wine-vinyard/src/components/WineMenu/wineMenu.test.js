@@ -1,7 +1,7 @@
 import React from 'react'
 import Adapter from 'enzyme-adapter-react-16'
 import { shallow, configure} from 'enzyme'
-import WineMenu from '../components/WineMenu/wineMenu'
+import WineMenu from './wineMenu'
 
 configure({adapter: new Adapter()})
 
