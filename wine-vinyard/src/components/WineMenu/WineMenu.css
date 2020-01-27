@@ -1,0 +1,10 @@
+.wine-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-left: 25%;
+
+    padding: 2%;
+
+}

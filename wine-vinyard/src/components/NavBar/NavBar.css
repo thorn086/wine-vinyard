@@ -1,0 +1,7 @@
+.nav-bar{
+    display: fixed;
+    background-color: gray;
+    width: auto;
+    height: 50px;
+    text-align: right;
+}
