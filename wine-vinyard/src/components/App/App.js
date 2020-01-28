@@ -1,26 +1,44 @@
 import React from 'react'
 import Home from '../../pages/Home/Home'
-
-import {Switch, Route} from 'react-router-dom'
-
+import dummyStore from '../../dummy-store'
+import { Switch, Route } from 'react-router-dom'
+import WineContent from '../../pages/WineContent'
 import Categories from '../../pages/wine_categories/wine_categories'
 import './App.css'
-
+import WineContext from '../../context'
 class App extends React.Component {
-    render() {
+    constructor() {
+        super()
+        this.state = {
+            rdWine: [],
+            wtWine: [],
+            wines: []
+        }
+    }
+
+
+
+    componentDidMount() {
+        setTimeout(() => this.setState(dummyStore), 600)
         
-          
+    }
+
+    render() {
+        const wineContext = {
+            wines: this.state.wines,
+                       
+        }
+        
         return (
-            <div>
-            <Switch>
-                <Route exact path='/'><Home /></Route>
-                <Route path='/RedWine'><Categories /></Route>
-                <Route path='/WhiteWine'><Categories /></Route>
-                <Route path='/AllWine'><Categories /></Route>
-            </Switch>
-               
-                
-            </div>
+            <WineContext.Provider value={wineContext}>    
+                <div>
+                    <Switch>
+                        <Route exact path='/'><Home  /></Route>
+                        <Route exact path='/wine'><Categories /></Route>
+                        <Route path='/wine/:id' component={WineContent}></Route>
+                    </Switch>
+                </div>
+            </WineContext.Provider>
         )
     }
 }

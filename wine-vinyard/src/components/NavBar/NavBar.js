@@ -7,6 +7,10 @@ class NavBar extends React.Component{
         return(
                 <nav className='nav-bar'>
                    <Link to='/'>Home</Link>
+                   {'||'}
+                   <Link to='/login'>Login</Link>
+                   {'||'}
+                   <Link to='/signup'>Sign Up</Link>
                 </nav>
         )
     }

@@ -6,9 +6,6 @@ import Adapter from 'enzyme-adapter-react-16'
 configure({ adapter: new Adapter() })
 describe('Categories Page',()=>{
     const catag = shallow(<Categories />)
-    it('contains a WineGroup component', () => {
-        expect(catag.find('WineGroup').exists()).toBe(true)
-    })
     it('contains a NavBar component', () => {
         expect(catag.find('NavBar').exists()).toBe(true)
     })
