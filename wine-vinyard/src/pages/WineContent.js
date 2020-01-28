@@ -1,21 +1,19 @@
 import React from 'react'
 import NavBar from '../components/NavBar/NavBar'
 import WineContext from '../context'
-import {getWine} from '../helpers'
+import {getWineItem} from '../helpers'
 
 
 class WineContent extends React.Component {
-    static defaultProps = {
-        match: {
-          params: {}
-        }
-      }
+    
     static contextType = WineContext
     render() {
         const {wines}=this.context
         const { id} = this.props.match.params
         console.log(id)
-        const info=getWine(wines,parseInt(id))
+        const info = getWineItem(wines,parseInt(id))
+       
+
         console.log("info",info)
         console.log('info name',)
         return (
