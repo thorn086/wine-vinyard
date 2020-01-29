@@ -10,12 +10,12 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: #777;
-    padding: 30px;
+    padding: 15px;
     width:100%;
 }
 
 .header{
-    height: 95vh;
+    height: 75vh;
     background-image:linear-gradient(
         to right bottom,
         #616010c6,
@@ -28,5 +28,4 @@ body {
 
 h1{
     text-align: center;
-    font-size: 50px;
 }

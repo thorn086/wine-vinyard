@@ -11,26 +11,26 @@
     
 }
 .letter{
-    font-size: 95px;
+    font-size: 45px;
     color:rgb(245, 6, 6);
 }
 .heading-main{
 display:block;
-font-size: 60px;
+font-size: 25px;
 font-weight: 400;
-letter-spacing: 30px;
+letter-spacing: 3px;
 border-bottom:2px solid #fff;
 }
 .word-sub{
     color:rgb(65, 255, 78);
     font-weight: 900;
-    font-size: 30px;
+    font-size: 14px;
     
 }
 .heading-sub{
     padding-top:2%;
 display: block;
-font-size: 20px;
+font-size: 17px;
 font-weight: 400;
 letter-spacing: 20px;
 }

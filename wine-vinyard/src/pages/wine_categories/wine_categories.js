@@ -7,8 +7,8 @@ import Wine from '../../components/Wine/Wine'
 class Categories extends React.Component {
     static contextType = WineContext
     render() {
-        const { wines } = this.context
-        console.log(wines)
+        //const { wines } = this.context
+        
         return (
             <div className='wine-catigories-page'>
                 <h1 className='catigories-title'>Wine Categories</h1>
