@@ -1,13 +1,15 @@
 .heading-primary {
     color:#fff;
     text-transform: uppercase;
+    backface-visibility: hidden;
 
 }
 .text-box{
     position: absolute; 
-    top: 27%;
+    top: 35%;
     left:52%;
     transform: translate(-50%, -50%);
+    text-align: center;
     
 }
 .letter{
@@ -19,12 +21,15 @@ display:block;
 font-size: 25px;
 font-weight: 400;
 letter-spacing: 3px;
-border-bottom:2px solid #fff;
+animation-name: moveInLeft;
+animation-duration: 3s;
+animation-timing-function: ease-out;
 }
 .word-sub{
     color:rgb(65, 255, 78);
     font-weight: 900;
-    font-size: 14px;
+    font-size: 25px;
+    
     
 }
 .heading-sub{
@@ -33,4 +38,32 @@ display: block;
 font-size: 17px;
 font-weight: 400;
 letter-spacing: 20px;
+animation: moveInRight 3s ease-in;
+}
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

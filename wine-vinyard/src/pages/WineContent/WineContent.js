@@ -2,7 +2,7 @@ import React from 'react'
 import NavBar from '../../components/NavBar/NavBar'
 import WineContext from '../../context'
 import { getWineItem } from '../../helpers'
-
+import './WineContent.css'
 //Add test suite
 
 class WineContent extends React.Component {
@@ -10,7 +10,9 @@ class WineContent extends React.Component {
     static contextType = WineContext
     render() {
         const { wines } = this.context
+        // console.log('this is the params',this.props.match.params)
         const { id } = this.props.match.params
+        //console.log(id)
         const info = getWineItem(wines, parseInt(id))
 
         return (
@@ -20,18 +22,24 @@ class WineContent extends React.Component {
                 <NavBar />
                 {info.map(item => {
                     return (
-                        <div key={item.id}>
-                            <h2 className='individual-info[0]'>{item.name}</h2>
-                            <p>{item.date}</p>
-                            <p>{item.content}</p>
-                            <p>{item.rating}</p>
+                        <div className='wine-selection' key={item.id}>
+                            <section className='wine-info'>
+                                <h2 className='individual-info'>{item.name}</h2>
+                                <p>{item.date}</p>
+                                <p>{item.content}</p>
+                                <p>{item.rating}</p>
+                            </section>
+                            <section className='wine-comments'>
+                                <textarea className='text-comment'></textarea>
+                            </section>
+                            <section className='submit-btns'>
+                                <button className='add-comment-btn'tag='button'>Submit</button>
+                                <button className='back-btn' tag='button' onClick={() => this.props.history.goBack()}>Back</button>
+                            </section>
                         </div>
                     )
                 }
                 )}
-
-                <button tag='button' onClick={() => this.props.history.goBack()}>Back</button>
-
             </div>
 
         )

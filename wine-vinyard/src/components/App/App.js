@@ -3,20 +3,18 @@ import Home from '../../pages/Home/Home'
 import dummyStore from '../../dummy-store'
 import { Switch, Route } from 'react-router-dom'
 import WineContent from '../../pages/WineContent/WineContent'
-import Categories from '../../pages/wine_categories/wine_categories'
+import Catigories from '../../pages/wine_catigories/wine_catigories'
 import SignUp from '../../pages/SignUp/SignUp'
 import './App.css'
 import WineContext from '../../context'
 class App extends React.Component {
     constructor(props) {
         super(props)
-     this.state={
-         wines:[],
+        this.state = {
+            wines:[],
         }
         //fetch(apiURL).then(res => res.json).then(res => this.state = res.wines)
- }
-
-
+    }
 
 
     async componentDidMount() {
@@ -27,19 +25,18 @@ class App extends React.Component {
     render() {
         const wineContext = {
             wines: this.state.wines,
-                       
+
         }
-        
+
         return (
-            <WineContext.Provider value={wineContext}>    
-                <div>
-                    <Switch className='route-paths' aria-live='polite'>
-                        <Route exact path='/'><Home  /></Route>
-                        <Route exact path='/wine'><Categories /></Route>
-                        <Route  path='/wine/:id'><WineContent /></Route>
-                        <Route path='/signup'><SignUp /></Route>
-                    </Switch>
-                </div>
+            <WineContext.Provider value={wineContext}>
+                <Switch>
+                    <Route exact path='/'><Home /></Route>
+                    <Route exact path='/wine'><Catigories /></Route>
+                    <Route path='/wine/:id' component={WineContent}></Route>
+                    <Route path='/signup'><SignUp /></Route>
+                </Switch>
+                
             </WineContext.Provider>
         )
     }

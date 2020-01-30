@@ -1,0 +1,19 @@
+.btn-group{
+    opacity: 70%;
+    margin-top: 5%;
+    color: #777;
+}
+
+.red-btn{
+    text-transform: uppercase;
+    padding: 8px 14px;
+    display: inline-block;
+    background-color: rgb(247, 35, 35);
+}
+.rt-btn, .lt-btn, .btn-back{
+    margin-left: 7px;
+}
+.btn-back{
+    
+    padding: 8px 30px;
+}

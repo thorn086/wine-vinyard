@@ -1,10 +1,20 @@
 .wine-menu{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 2%;
-    margin-left: 25%;
+    display: inline-block;
+    margin: 20% 6% 0 0;
+    width: 200px;
+    height: 60px;
+}
 
-    padding: 2%;
+.wine-btn:link, .wine-btn:visited{
+   
+    text-transform: uppercase;
+    padding: 15px 40px;
+    display: inline-block;
+}
 
+.btn-white{
+    opacity: 70%;
+    background-color: #fff;
+    color: #777;
+    
 }

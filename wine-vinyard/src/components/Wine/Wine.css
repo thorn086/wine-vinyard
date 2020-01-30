@@ -1,0 +1,13 @@
+.wine-items {
+    padding: 8%;
+}
+
+.wine-name{
+    border-bottom: 3px solid grey ;
+}
+
+.company-title{
+    display: inline-block;
+    font-size: 12px;
+    padding-left: 35px;
+}
