@@ -8,7 +8,7 @@ class Wine extends React.Component {
 
     render() {
         const { wines } = this.context
-        console.log(wines)
+        
 
         return (
             <div>

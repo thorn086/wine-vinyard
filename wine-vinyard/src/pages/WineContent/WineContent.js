@@ -10,9 +10,7 @@ class WineContent extends React.Component {
     static contextType = WineContext
     render() {
         const { wines } = this.context
-        // console.log('this is the params',this.props.match.params)
         const { id } = this.props.match.params
-        //console.log(id)
         const info = getWineItem(wines, parseInt(id))
 
         return (
@@ -30,6 +28,7 @@ class WineContent extends React.Component {
                                 <p>{item.rating}</p>
                             </section>
                             <section className='wine-comments'>
+                                <p className='comment-title'>Add a comment about this wine</p>
                                 <textarea className='text-comment'></textarea>
                             </section>
                             <section className='submit-btns'>

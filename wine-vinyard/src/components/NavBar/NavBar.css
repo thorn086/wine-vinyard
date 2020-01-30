@@ -1,4 +1,7 @@
-.nav-bar{
+
+.navigation__list{
+    display: flex;
+    flex-direction: row;
     display: fixed;
     background-color: gray;
     width: auto;
