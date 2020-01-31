@@ -15,7 +15,7 @@ class WineMenu extends React.Component {
                     <Link to='/wine' style={{ textDecoration:'none', color:'black'}}>All Wines</Link>
                 </div>
                 <div className='wine-btn btn-white btn-animated btn-bottom'>
-                    <Link to='/mylist' style={{ textDecoration:'none', color:'black'}}>My Wines</Link>
+                    <Link to='/userlist' style={{ textDecoration:'none', color:'black'}}>My Wines</Link>
                 </div>
             </section >
         )

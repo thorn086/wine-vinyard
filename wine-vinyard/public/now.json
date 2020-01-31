@@ -1,0 +1,9 @@
+{
+    "version": 1,
+    "alias":"thorn086-wine-vinyard-app",
+    "name": "wine-vinyard-app",
+  "routes": [
+      { "handle": "filesystem" },
+      { "src": "/.*", "dest": "/index.html" }
+  ]
+}

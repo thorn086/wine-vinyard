@@ -6,7 +6,7 @@ import WineContent from '../../pages/WineContent/WineContent'
 import Catigories from '../../pages/wine_catigories/wine_catigories'
 import SignUp from '../../pages/SignUp/SignUp'
 import Login from '../../pages/Login/Login'
-import MyWine from '../../pages/MyWine/MyWine'
+import UserWine from '../../pages/UserWine/UserWine'
 import './App.css'
 import WineContext from '../../context'
 class App extends React.Component {
@@ -27,7 +27,6 @@ class App extends React.Component {
     render() {
         const wineContext = {
             wines: this.state.wines,
-
         }
 
         return (
@@ -36,10 +35,9 @@ class App extends React.Component {
                     <Route exact path='/'><Home /></Route>
                     <Route exact path='/wine'><Catigories /></Route>
                     <Route path='/wine/:id' component={WineContent}></Route>
-                    <Route path='/mywine' component={MyWine}></Route>
+                    <Route path='/userlist'><UserWine /></Route>
                     <Route path='/signup'><SignUp /></Route>
                     <Route path='/Login' component={Login}></Route>
-
                 </Switch>
                 
             </WineContext.Provider>
