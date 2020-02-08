@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from '../../components/NavBar/NavBar'
 import './SignUp.css'
+import ApiAuthService from '../../services/api-auth-service'
 //create fetch for API to users
 //create test suite
 
@@ -12,8 +13,32 @@ class SignUp extends React.Component {
         }
     }
 
-    state = { error: null }
-
+   
+    handleRegistrationSuccess = () => {
+        const { location, history } = this.props
+        const destination = (location.state || {}).from || '/login'
+        history.push(destination)
+      };
+    
+      handleSubmit = e => {
+        e.preventDefault()
+        const { first_name, last_name, email, password } = e.target
+       ApiAuthService.postUser({
+          first_name: first_name.value,
+          last_name: last_name.value,
+          user_email: email.value,
+          password: password.value
+        })
+          .then(res => {
+            first_name.value = ''
+            last_name.value = ''
+            email.value = ''
+            password.value = ''
+            this.handleRegistrationSuccess()
+          })
+          .catch(error=>{
+            console.error({error})})
+      };
 
     render() {
         return (
@@ -87,7 +112,7 @@ class SignUp extends React.Component {
                 </form>
                 <div className='error-message'>
                     <strong>
-                        {this.state.error}
+                        
                     </strong>
                 </div>
             </div>

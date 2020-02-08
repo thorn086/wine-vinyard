@@ -2,13 +2,13 @@ import React from 'react'
 import NavBar from '../../components/NavBar/NavBar'
 import WineContext from '../../context'
 import Wine from '../../components/Wine/Wine'
-import{Link}from'react-router-dom'
+import { Link } from 'react-router-dom'
 import './wine-catigories.css'
 
 class Catigories extends React.Component {
-    
 
-   static contextType = WineContext    
+
+    static contextType = WineContext
 
     render() {
         return (
@@ -19,10 +19,13 @@ class Catigories extends React.Component {
                     <button tag='button' className='red-btn lt-btn' onClick={this.redWines}>Red Wine</button>
                     <button tag='button' className='red-btn rt-btn'>White Wine</button>
                     <div className='red-btn btn-back'>
-                    <Link to='/' style={{ textDecoration:'none', fontSize:'11px', color:'black', }}>Back</Link>
+                    <Link to='/addwine' style={{ textDecoration: 'none', fontSize: '11px', color: 'black', }}>Add a Wine</Link>
                 </div>
                 </div>
-                    <Wine />
+                <Wine />
+                <div className='red-btn btn-back'>
+                    <Link to='/' style={{ textDecoration: 'none', fontSize: '11px', color: 'black', }}>Back</Link>
+                </div>
             </div>
         )
     }

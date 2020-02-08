@@ -1,15 +1,18 @@
 import React from 'react'
 import Home from '../../pages/Home/Home'
-import dummyStore from '../../dummy-store'
+import API from '../../API'
 import { Switch, Route } from 'react-router-dom'
 import WineContent from '../../pages/WineContent/WineContent'
 import Catigories from '../../pages/wine_catigories/wine_catigories'
 import SignUp from '../../pages/SignUp/SignUp'
 import Login from '../../pages/Login/Login'
-import UserWine from '../../pages/UserWine/UserWine'
+import AddWine from '../../pages/AddWine/addwine'
 import './App.css'
 import WineContext from '../../context'
+
+
 class App extends React.Component {
+  
     constructor(props) {
         super(props)
         this.state = {
@@ -19,15 +22,45 @@ class App extends React.Component {
     }
 
 
-    async componentDidMount() {
-        this.setState(dummyStore)
+    componentDidMount() {
+     fetch(`${API.API_ENDPOINT}/wine`)
+        .then (winesRes =>{
+            if(!winesRes.ok){
+                throw new Error(winesRes.statusText)
+            }
+            return winesRes.json()
+            
+        })
+        .then(response => this.setState({wines:response}))
+        .catch(err=>{
+            this.setState({
+                error: 'Sorry could not get wines as this time.'
+            })
+        })
         //to do: all wine api here to set state
+    }
+
+    handleAddWine=wine=>{
+        this.setState({
+            wines:[
+                ...this.state.wines,wine
+            ]
+        })
+    }
+
+    handleDeleteWine=wineId=>{
+        this.setState({
+            wines:this.state.wines.filter(wine=>wine.id !== wineId)
+        })
     }
 
     render() {
         const wineContext = {
             wines: this.state.wines,
+            addWine: this.handleAddWine,
+            deleteWine:this.handleDeleteWine
         }
+        console.log(wineContext)
 
         return (
             <WineContext.Provider value={wineContext}>
@@ -35,11 +68,10 @@ class App extends React.Component {
                     <Route exact path='/'><Home /></Route>
                     <Route exact path='/wine'><Catigories /></Route>
                     <Route path='/wine/:id' component={WineContent}></Route>
-                    <Route path='/userlist'><UserWine /></Route>
                     <Route path='/signup'><SignUp /></Route>
                     <Route path='/Login' component={Login}></Route>
-                </Switch>
-                
+                    <Route path='/addwine' component={AddWine}></Route>
+                </Switch>   
             </WineContext.Provider>
         )
     }

@@ -26,13 +26,10 @@ class WineContent extends React.Component {
                                 <p>{item.date}</p>
                                 <p>{item.content}</p>
                                 <p>{item.rating}</p>
-                            </section>
-                            <section className='wine-comments'>
-                                <p className='comment-title'>Add a comment about this wine</p>
-                                <textarea className='text-comment'></textarea>
+                                <p>{item.author}</p>
                             </section>
                             <section className='submit-btns'>
-                                <button className='add-comment-btn'tag='button'>Submit</button>
+                                <button className='add-wine-list'tag='button'>Add Wine to list</button>
                                 <button className='back-btn' tag='button' onClick={() => this.props.history.goBack()}>Back</button>
                             </section>
                         </div>

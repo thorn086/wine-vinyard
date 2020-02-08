@@ -8,7 +8,7 @@ class Wine extends React.Component {
 
     render() {
         const { wines } = this.context
-        
+        console.log(wines)
 
         return (
             <div>
@@ -16,13 +16,11 @@ class Wine extends React.Component {
                     <div key={wine.id} className='wine-items'>
                         <h4 className='wine-name'>
                             <Link to={`/wine/${wine.id}`} style={{ textDecoration: 'none', color: 'black', fontSize: '20px' }}>{wine.name}</Link>
-                            {'  '}| {wine.wineCat}
+                            {'  '}| {wine.winecat}
                         </h4>
                         <div className='company'>{wine.company_name}
                         <p className='company-title'>Company Name</p>
-                        </div>
-                         
-                        
+                        </div>    
                     </div>
                 )}
             </div>

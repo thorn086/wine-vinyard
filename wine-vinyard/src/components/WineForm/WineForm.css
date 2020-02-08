@@ -1,0 +1,63 @@
+.Wine__form {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 16px;
+    max-width: 332px;
+  }
+  
+  .Wine__form label {
+    display: block;
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+  
+  .Wine__form input,
+  .Wine__form textarea,
+  .Wine__form select, 
+  .Wine__form option{
+    font-size: 14px;
+    padding: 8px;
+    width: 300px;
+  }
+
+  .Wine__form select,
+  .Wine__form option {
+    height: 33px;
+  }
+  
+  .Wine__form > .wine__field {
+    margin-bottom: 16px;
+  }
+  .Wine__form > .buttons {
+    margin-top: 26px;
+  }
+  
+  .Wine__form button {
+    background-color: #777;
+    border-radius: 4px;
+    border: 0;
+    color: black;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .Wine__form button[type="submit"]:hover {
+    background-color: #066af7;
+    color: white;
+  }
+  #date{
+      max-height: max-content;
+      padding:0;
+  }
+  #date, #winecat, #content{
+      margin-left: 25px;
+  }
+
+  .errorMessage{
+      padding: 2%;
+      margin-left: 40px;
+      font-size: 14px;
+  }
