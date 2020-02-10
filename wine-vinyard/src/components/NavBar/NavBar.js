@@ -10,11 +10,8 @@ class NavBar extends React.Component {
 
     renderLogoutLink() {
         return (
-            <div className='NavBar__logged-in'>
-                <Link onClick={this.handleLogoutClick}
-                    to='/'>
-                    Logout
-            </Link>
+            <div className='NavBar__logged-in'  onClick={this.handleLogoutClick}>
+                <Link to='/' onClick={()=>window.location.reload()}> Logout</Link>
             </div>
         )
     }

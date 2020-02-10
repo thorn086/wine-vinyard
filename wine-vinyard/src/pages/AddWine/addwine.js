@@ -7,6 +7,7 @@ import PropTypes from 'prop-types'
 import WineForm from '../../components/WineForm/WineForm'
 import API from '../../API'
 import TokenService from '../../services/token-services'
+import './addwine.css'
 
 class AddWine extends React.Component {
     static propTypes={
@@ -115,7 +116,6 @@ class AddWine extends React.Component {
             name: event.target['wine-name'].value,
             content: event.target['wine-content'].value,
             rating: event.target['wine-rating'].value,
-            
         }
         fetch(`${API.API_ENDPOINT}/wine`,{
             method: 'POST',
@@ -201,9 +201,11 @@ class AddWine extends React.Component {
                         </WineErr>
                     </div>
                     <div className='addWine-button'>
-                      <button type='submit' >
+                      <button type='submit'  className='addwine-btn'>
                         Add Wine
                       </button>
+                      <button className='back' tag='button' onClick={() => this.props.history.goBack()}>Back</button>
+
                     </div>
                 </WineForm>
 
