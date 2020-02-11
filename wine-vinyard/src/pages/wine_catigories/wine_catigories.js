@@ -13,7 +13,7 @@ class Catigories extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            type: ''
+            type: 'All'
         }
     }
 
@@ -32,7 +32,7 @@ class Catigories extends React.Component {
 
         const { type } = this.state
 
-        console.log(type)
+      
 
         return (
             <div className='wine-catigories-page'>

@@ -7,26 +7,28 @@ class Wine extends React.Component {
 
     static contextType = WineContext
 
-   
+
 
     render() {
-        const {wines } =this.context
-        const { type } = this.props; 
-        const items = this.context.wines.filter(wine => wine.winecat === type)
-        
+        const { type } = this.props;
+
+        let { wines } = this.context
+        if (type !== 'All') {
+            wines = this.context.wines.filter(wine => wine.winecat === type)
+        }
 
         return (
             <div>
-                {(wines || items).map(wine =>
+                {wines.map(wine =>
                     <div key={wine.id} className='wine-items'>
                         <h4 className='wine-name'>
                             <Link to={`/wine/${wine.id}`} style={{ textDecoration: 'none', color: 'black', fontSize: '20px' }}>{wine.name}</Link>
-                            {'  '}| {wine.winecat} 
+                            {'  '}| {wine.winecat}
                         </h4>
                         <div className='company'>{wine.company_name}
-                        <p className='company-title'>Company Name</p>
-                        
-                        </div>    
+                            <p className='company-title'>Company Name</p>
+
+                        </div>
                     </div>
                 )}
             </div>

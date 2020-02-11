@@ -48,17 +48,20 @@ class App extends React.Component {
         })
     }
 
-    handleDeleteWine=id=>{
+    handleDeleteWine=wineId=>{
+        const newWine=this.state.wines.filter(wine=>wine.id !== wineId)
+       
         this.setState({
-            wines:this.state.wines.filter(wine=>wine.id !== id)
+            wines:newWine
         })
+       
     }
 
     render() {
         const wineContext = {
             wines: this.state.wines,
             addWine: this.handleAddWine,
-            deleteWine:this.handleDeleteWine
+            deleteWine: this.handleDeleteWine
         }
 
         return (

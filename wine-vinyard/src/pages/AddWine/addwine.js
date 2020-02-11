@@ -139,8 +139,7 @@ class AddWine extends React.Component {
         })
     }
     render() {
-        //const { wines = [] } = this.context
-        console.log(this.state.date)
+       
         return (
             <section className='addWine-form'>
                 <h2>Add A Wine</h2>

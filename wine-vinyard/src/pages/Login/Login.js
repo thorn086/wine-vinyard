@@ -22,7 +22,6 @@ class Login extends React.Component{
         e.preventDefault()
         this.setState({ error: null })
         const { email, password } = e.target
-        console.log(email.value, password.value)
         ApiAuthService.postLogin({
           user_email: email.value,
           password: password.value
