@@ -6,8 +6,8 @@ import WineMenu from './wineMenu'
 configure({adapter: new Adapter()})
 
 describe('wineMenu component',()=>{
-    const WM = shallow(<WineMenu />)
+    const wM = shallow(<WineMenu />)
     it(' renders properly',()=>{
-        expect(WM).toMatchSnapshot()
+        expect(wM).toMatchSnapshot()
     })
 })

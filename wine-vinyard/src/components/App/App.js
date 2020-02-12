@@ -68,7 +68,7 @@ class App extends React.Component {
             <WineContext.Provider value={wineContext}>
                 <Switch>
                     <Route exact path='/'><Home /></Route>
-                    <Route exact path='/wine'><Catigories /></Route>
+                    <Route exact path='/wine'component={Catigories}></Route>
                     <Route path='/wine/:id' component={WineContent}></Route>
                     <Route path='/signup'><SignUp /></Route>
                     <Route path='/Login' component={Login}></Route>
