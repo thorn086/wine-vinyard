@@ -1,10 +1,63 @@
 
-.navigation__list{
-    display: flex;
-    flex-direction: row;
-    display: fixed;
-    background-color: gray;
-    width: auto;
-    height: 50px;
-    text-align: right;
+.navigation__item{
+margin:3rem;
 }
+
+.navigation{
+
+}
+.navigation__checkbox{
+display: none;
+}
+.navigation__checkbox:checked ~ .navigation__backgroud{
+transform: scale(80);
+}
+.navigation__checkbox:checked ~ .navigation__nav{
+    opacity: 100%;
+    width: 100%;
+    }
+.navigation__button{
+    margin: 0;
+background-color: white;
+height: 3rem;
+width: 3rem;
+position: fixed;
+top: 2.5rem;
+right: 2.5rem;
+border-radius: 50%;
+z-index: 2000;
+box-shadow: 0 1rem 3rem black;
+}
+
+.navigation__backgroud{
+height: 2rem;
+width: 2rem;
+border-radius: 50%;
+position: fixed;
+top: 2.75rem;
+right: 2.75rem;
+background-image: radial-gradient( #8c9a30,  #020009);
+z-index: 1000;
+}
+
+.navigation__nav{
+height: 100vh;
+width: 0;
+position: fixed;
+top: 0;
+right: 0;
+z-index: 1500;
+opacity: 0;
+}
+
+.navigation__list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style:none ;
+    text-align: center;
+   color: #4c4cf2;
+}
+
+
