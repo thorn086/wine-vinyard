@@ -67,7 +67,7 @@ opacity: 1;
 transform: translateY(0);
     }
 }
-.btn-animated{
+.btn-animated, .site-description{
     animation: moveInButton 2s ease-out .75s;
     animation-fill-mode: backwards;
 }
