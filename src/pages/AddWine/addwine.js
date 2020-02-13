@@ -76,7 +76,6 @@ class AddWine extends React.Component {
     }
     validateDate(){
         const date = this.state.date.value
-        console.log(date)
         if(date === '1899'){
             return 'You must select a date'
         }
