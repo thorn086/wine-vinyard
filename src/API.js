@@ -1,6 +1,5 @@
 export default {
-    API_ENDPOINT:'http://localhost:8000/api',
-    API_KEY: process.env.REACT_APP_API_KEY,
+    API_ENDPOINT:'http://localhost:3000/api',
     TOKEN_KEY: 'wine-vinyard-client-auth-token',
     USER_ID: 'wine-vinyard-user-id'
 }
