@@ -24,6 +24,7 @@ letter-spacing: 3px;
 animation-name: moveInLeft;
 animation-duration: 3s;
 animation-timing-function: ease-out;
+animation-fill-mode: both;
 }
 .word-sub{
     color:rgb(65, 255, 78);
@@ -39,6 +40,7 @@ font-size: 17px;
 font-weight: 400;
 letter-spacing: 20px;
 animation: moveInRight 3s ease-in;
+animation-fill-mode: both;
 }
 
 .site-description{

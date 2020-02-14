@@ -68,6 +68,6 @@ transform: translateY(0);
     }
 }
 .btn-animated, .site-description{
-    animation: moveInButton 2s ease-out .75s;
-    animation-fill-mode: backwards;
+    animation: moveInButton 2s ease-in .75s;
+    animation-fill-mode: both;
 }

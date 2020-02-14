@@ -11,7 +11,7 @@ class NavBar extends React.Component {
     renderLogoutLink() {
         return (
             <div className='navigation__item' onClick={this.handleLogoutClick}>
-                <Link to='/' onClick={() => window.location.reload()}> Logout</Link>
+                <Link to='/' onClick={() => window.location.reload()} style={{ textDecoration: 'none', fontSize: '2rem', fontWeight: '300', color: 'white', textTransform: 'uppercase', backgroundImage: 'linear-gradient(120deg, #4c4cf2 80%, #4c4cf2 5%, white 92%', padding: '.5rem 1rem', borderRadius: '45%',border:'2px solid black', boxShadow: '0 1rem 3rem black' }}> Logout</Link>
             </div>
         )
     }
@@ -32,7 +32,7 @@ class NavBar extends React.Component {
         return (
             <div className='navigation'>
                 <input type='checkbox' className='navigation__checkbox' id='navi-toggle' />
-                <label for='navi-toggle' className='navigation__button'>menu</label>
+                <label htmlFor='navi-toggle' className='navigation__button'>menu</label>
                 <div className='navigation__backgroud'>&nbsp;</div>
 
                 <nav className='navigation__nav'>

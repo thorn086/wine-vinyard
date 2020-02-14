@@ -3,9 +3,6 @@
 margin:3rem;
 }
 
-.navigation{
-
-}
 .navigation__checkbox{
 display: none;
 }
@@ -13,7 +10,7 @@ display: none;
 transform: scale(80);
 }
 .navigation__checkbox:checked ~ .navigation__nav{
-    opacity: 100%;
+    opacity: 1;
     width: 100%;
     }
 .navigation__button{
@@ -57,7 +54,7 @@ opacity: 0;
     transform: translate(-50%, -50%);
     list-style:none ;
     text-align: center;
-   color: #4c4cf2;
+    color: #4c4cf2;
 }
 
 
