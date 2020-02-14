@@ -25,6 +25,7 @@ animation-name: moveInLeft;
 animation-duration: 3s;
 animation-timing-function: ease-out;
 animation-fill-mode: both;
+margin-top: 9rem;
 }
 .word-sub{
     color:rgb(65, 255, 78);

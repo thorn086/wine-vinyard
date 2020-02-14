@@ -11,11 +11,12 @@ body {
     line-height: 1.7;
     padding: 15px;
     width:100%;
+    background-color: rgb(167, 166, 166);
 }
 
 .header{
     text-align: center;
-    height: 95vh;
+    height: 135vh;
     background-image:linear-gradient(
         to right bottom,
         #616010c6,

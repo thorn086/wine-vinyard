@@ -7,9 +7,9 @@ function Home() {
     <div>
         <header className='header'>
         <Title />
-        </header>
-        <NavBar />
         <br />
+        <NavBar />
+        </header>
     </div>
     )
 }
