@@ -11,7 +11,12 @@ class NavBar extends React.Component {
     renderLogoutLink() {
         return (
             <div className='navigation__item' onClick={this.handleLogoutClick}>
-                <Link to='/' onClick={() => window.location.reload()} style={{ textDecoration: 'none', fontSize: '2rem', fontWeight: '300', color: 'white', textTransform: 'uppercase', backgroundImage: 'linear-gradient(120deg, #4c4cf2 80%, #4c4cf2 5%, white 92%', padding: '.5rem 1rem', borderRadius: '45%',border:'2px solid black', boxShadow: '0 1rem 3rem black' }}> Logout</Link>
+                <li className='navigation__item'>
+                    <Link to='/' onClick={() => window.location.reload()} style={{ textDecoration: 'none', fontSize: '2rem', fontWeight: '300', color: 'white', textTransform: 'uppercase', backgroundImage: 'linear-gradient(120deg, #4c4cf2 80%, #4c4cf2 5%, white 92%', padding: '.5rem 1rem', borderRadius: '45%', border: '2px solid black', boxShadow: '0 1rem 3rem black' }}> Logout</Link>
+                </li>
+                <li className='navigation__item'>
+                    <Link to='/' style={{ textDecoration: 'none', fontSize: '2rem', fontWeight: '300', color: 'white', textTransform: 'uppercase', backgroundImage: 'linear-gradient(120deg, #4c4cf2 80%, #4c4cf2 5%, white 92%', padding: '.5rem 1rem', borderRadius: '45%', border: '2px solid black', boxShadow: '0 1rem 3rem black' }}>Home</Link>
+                </li>
             </div>
         )
     }
@@ -20,10 +25,10 @@ class NavBar extends React.Component {
         return (
             <div>
                 <li className='navigation__item'>
-                    <Link to='/login' style={{ textDecoration: 'none', fontSize: '2rem', fontWeight: '300', color: 'white', textTransform: 'uppercase', backgroundImage: 'linear-gradient(120deg, #4c4cf2 80%, #4c4cf2 5%, white 92%', padding: '.5rem 1rem', borderRadius: '45%',border:'2px solid black', boxShadow: '0 1rem 3rem black' }}>Login</Link>
+                    <Link to='/login' style={{ textDecoration: 'none', fontSize: '2rem', fontWeight: '300', color: 'white', textTransform: 'uppercase', backgroundImage: 'linear-gradient(120deg, #4c4cf2 80%, #4c4cf2 5%, white 92%', padding: '.5rem 1rem', borderRadius: '45%', border: '2px solid black', boxShadow: '0 1rem 3rem black' }}>Login</Link>
                 </li>
                 <li className='navigation__item'>
-                    <Link to='/signup' style={{ textDecoration: 'none', fontSize: '2rem', fontWeight: '300', color: 'white', textTransform: 'uppercase', backgroundImage: 'linear-gradient(120deg, #4c4cf2 80%, #4c4cf2 5%, white 92%', padding: '.5rem 1rem', borderRadius: '45%', border:'2px solid black', boxShadow: '0 1rem 3rem black' }}>Sign Up</Link>
+                    <Link to='/signup' style={{ textDecoration: 'none', fontSize: '2rem', fontWeight: '300', color: 'white', textTransform: 'uppercase', backgroundImage: 'linear-gradient(120deg, #4c4cf2 80%, #4c4cf2 5%, white 92%', padding: '.5rem 1rem', borderRadius: '45%', border: '2px solid black', boxShadow: '0 1rem 3rem black' }}>Sign Up</Link>
                 </li>
             </div>
         )
@@ -40,7 +45,6 @@ class NavBar extends React.Component {
                         {TokenService.hasAuthToken()
                             ? this.renderLogoutLink()
                             : this.toggleLoginLink()}
-                        <Link to='/' style={{ textDecoration: 'none', fontSize: '2rem', fontWeight: '300', color: 'white', textTransform: 'uppercase', backgroundImage: 'linear-gradient(120deg, #4c4cf2 80%, #4c4cf2 5%, white 92%', padding: '.5rem 1rem', borderRadius: '45%', border:'2px solid black', boxShadow: '0 1rem 3rem black' }}>Home</Link>
                     </ul>
                 </nav>
             </div>
