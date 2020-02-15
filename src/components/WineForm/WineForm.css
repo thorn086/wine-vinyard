@@ -1,9 +1,9 @@
+
+
 .Wine__form {
-    background-color: rgb(255, 255, 255);
     color: black;
     padding: 2px;
-    max-width: 332px;
-    
+    width: 90%;
   }
  
   h2{
@@ -22,7 +22,7 @@
   .Wine__form option{
     font-size: 14px;
     padding: 8px;
-    width: 300px;
+    width: 15rem;
   }
 
   .Wine__form select,
@@ -37,9 +37,10 @@
     margin-top: 26px;
   }
   
+  
   .Wine__form button {
-    background-color: #777;
-    border-radius: 4px;
+    background-color: rgb(250, 248, 248);
+    border-radius: 3rem;
     border: 0;
     color: black;
     display: block;
@@ -53,9 +54,10 @@
     background-color: #066af7;
     color: white;
   }
-  #date{
-      max-height: max-content;
+  #date, #winecat{
+      max-height: 20rem;
       padding:0;
+      background-color:rgb(196, 196, 196);
   }
   #date, #winecat, #content{
       margin-left: 25px;
@@ -65,4 +67,75 @@
       padding: 2%;
       margin-left: 40px;
       font-size: 14px;
+      color: red;
+      text-shadow: 2px 2px rgb(15, 2, 2);
+  }
+  .add__wine{
+    margin-top: 5rem;
+    font-size: 2rem;
+  }
+
+@media(min-width:411px){
+  .addwine__style, .Wine__form{
+    width:80%;
+    margin: 2rem;
+  }
+  .Wine__form {
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+  }
+  .Wine__form label {
+    font-size: 18px;
+    padding-bottom: 1rem;
+    display: inline-block;
+  }
+  
+  .Wine__form input,
+  .Wine__form textarea,
+  .Wine__form select, 
+  .Wine__form option{
+    font-size: 15px;
+    padding: 8px;
+    width: 15rem;
+  }
+  #date, #winecat, #content{
+    margin-left: 1rem;
+  }
+  .errorMessage{
+    padding: 1%;
+    margin-left: 10px;
+    font-size: 14px;
+}
+}
+
+
+  @media (min-width: 632px){
+.addwine__style{
+  width: 60%;
+  margin: 4rem 2rem;
+}
+.Wine__form {
+  width: 60%;
+  padding: 1rem;
+  margin: 4rem 2rem;
+}
+.Wine__form label {
+  font-size: 18px;
+  padding-bottom: 1rem;
+  display: inline-block;
+}
+
+.Wine__form input,
+.Wine__form textarea,
+.Wine__form select, 
+.Wine__form option{
+  font-size: 15px;
+  padding: 8px;
+  width: 25rem;
+}
+#date, #winecat, #content{
+  margin-left: 1.5rem;
+}
+
   }

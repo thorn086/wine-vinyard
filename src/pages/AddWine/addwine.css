@@ -1,18 +1,22 @@
-.addWine-button{
+.addwine-button{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 25%;
+    justify-content: space-evenly;
 }
 
 .addwine-btn, .back{
-   
+    margin: 3rem 1rem 6rem 0;
     height:50px;
     width: 100px;
 }
 .addwine-btn{
-    margin: 2px;
+    margin-left: 2rem;
+
 }
-.back{
-    margin: 2px;
+@media(min-width:411px){
+    .addwine-btn, .back{
+        margin: 1rem;
+        height:50px;
+        width: 100px;
+    }
 }

@@ -22,8 +22,8 @@ class Wine extends React.Component {
                 {wines.map(wine =>
                     <div key={wine.id} className='wine-items'>
                         <h4 className='wine-name'>
-                            <Link to={`/wine/${wine.id}`} style={{ textDecoration: 'none', color: 'black', fontSize: '20px' }}>{wine.name}</Link>
-                            {'  '}| {wine.winecat}
+                            <Link to={`/wine/${wine.id}`} style={{ textDecoration: 'none', fontSize: '20px',color: '#f8fc3a',textShadow: '2px 2px black' }}>{wine.name}</Link>
+                             <div className='class__name'>{wine.winecat}</div>
                         </h4>
                         <div className='company'>{wine.company_name}
                             <p className='company-title'>Company Name</p>

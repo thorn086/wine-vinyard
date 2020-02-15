@@ -13,7 +13,6 @@
     "popper.js": "^1.16.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
-    "react-scroll-up": "^1.3.3",
     "sinon": "^8.1.1",
     "typescript": "^3.7.5",
     "react": "^16.12.0",

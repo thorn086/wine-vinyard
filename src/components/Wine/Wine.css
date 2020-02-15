@@ -1,13 +1,35 @@
 .wine-items {
-    padding: 8%;
+    width: 95%;
+    margin: .8rem;
+    padding: 1rem;
+    box-shadow: 0 3rem 6rem black;
+    border: 2px solid white;
+    shape-outside: polygon(20% 0, 100% 0, 0 20%, 0 0);
+
 }
 
 .wine-name{
-    border-bottom: 3px solid grey ;
+    border-bottom: 3px solid white ;
+    
 }
-
+.class__name, .company, .company-title{
+    color: white;
+}
 .company-title{
     display: inline-block;
     font-size: 12px;
     padding-left: 35px;
+}
+.instructions{
+    color:black;
+    padding: 1.5rem;
+    background-color: rgb(211, 211, 148);
+    border: 2px solid white;
+    width: 98%;
+   margin:.4rem;
+    transform: skewX(-6deg);
+
+}
+.text{
+    transform: skewX(6deg);
 }

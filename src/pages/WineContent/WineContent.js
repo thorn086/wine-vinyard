@@ -6,7 +6,7 @@ import { withRouter } from 'react-router-dom'
 import { getWineItem } from '../../helpers'
 import API from '../../API'
 import './WineContent.css'
-//Add test suite
+
 
 class WineContent extends React.Component {
     static defaultProps={
@@ -56,9 +56,9 @@ class WineContent extends React.Component {
                         <div className='wine-selection' key={item.id}>
                             <section className='wine-info'>
                                 <h2 className='individual-info'>{item.name}</h2>
-                                <p>{item.date}</p>
-                                <p>{item.content}</p>
-                                <p>{item.rating}</p>
+                                <p> Year made:{item.date}</p>
+                                <p>Thoughts:{item.content}</p>
+                                <p>Rating:{item.rating}</p>
                                 <p>Wine added by UserID ({item.author})</p>
                             </section>
                             <section className='submit-btns'>
