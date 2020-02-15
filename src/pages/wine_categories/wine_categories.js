@@ -31,7 +31,7 @@ class categories extends React.Component {
 
         const { type } = this.state
 
-      
+
 
         return (
             <div className='wine-categories-page'>
@@ -42,14 +42,15 @@ class categories extends React.Component {
                      You can also sort wine by their color by selecting red or white.</p>
                 </div>
                 <div className='btn-group'>
-                    <button tag='button' className='red-btn lt-btn rw-btn' onClick={this.handleWineSelection} >Red Wine</button>
-                    <button tag='button' className='red-btn rt-btn ww-btn' onClick={this.handleWineSelection} >White Wine</button>
+                    <button tag='button' className='red-btn lt-btn rw-btn' onClick={this.handleWineSelection} >Red</button>
+                    <button tag='button' className='red-btn rt-btn ww-btn' onClick={this.handleWineSelection} >White</button>
+                    <button className='red-btn add_wine'>
+                        <Link to='/addwine' style={{ textDecoration: 'none', fontSize: '16px', color: 'black', padding: '1px', textAlign: 'center' }}>Add</Link>
+                    </button>
                 </div>
                 <Wine type={type} />
-                <div className='red-btn btn-back add_wine'>
-                    <Link to='/addwine' style={{ textDecoration: 'none', fontSize: '11px', color: 'black' }}>Add a Wine</Link>
-                </div>
-                
+
+
             </div>
         )
     }
