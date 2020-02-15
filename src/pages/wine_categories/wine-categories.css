@@ -3,23 +3,25 @@
     color: rgb(15, 15, 15);
 }
 .rw-btn, .ww-btn{
-    height: 50px;
-    width: 150px;
+    height: 3rem;
+    width: 8rem;
     font-size: 16px;
 }
 
 .red-btn, .top-btn{
     text-transform: uppercase;
-    padding: 8px 14px;
+    padding: .5rem;
     display: inline-block;
-    background-color: rgb(247, 35, 35);
+    border-radius: 3rem;
+    background-color:white;
 }
 .rt-btn, .lt-btn{
-    margin-left: 30px;
+    margin-left: .8rem;
 }
 .btn-back{
-    margin: 20px 68px;
+    margin: .8rem;
     padding: 1.9px 27px;
+    border-radius: 3rem;
 }
 .top-btn{
 position: relative;
@@ -30,4 +32,8 @@ position: relative;
     background-color: rgb(114, 112, 245);
     color:black;
     font-size: 16px;
+}
+.title__page.wine{
+    margin: 4rem 0 2rem 0 ;
+   padding-left: 1rem;
 }

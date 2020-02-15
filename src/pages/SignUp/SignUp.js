@@ -43,9 +43,17 @@ class SignUp extends React.Component {
     render() {
         return (
             <div className='signup-form'>
-                <h2 className='signup-title'>Sign Up Here</h2>
+                <h2 className='title__page'>Sign Up Here</h2>
                 <NavBar />
                 <form className='signup-form-box' onSubmit={this.handleSubmit}>
+                <div className='signup-password-req'>
+                        <strong>
+                            Important Password requirements:<br />
+                            Must be between 8 and 50 characters<br />
+                            Must not begin or end with a space<br />
+                            Must contain an uppercase, lowercase, number and special character
+                  </strong>
+                    </div>
                     <div className='signup-field'>
                         <label
                             htmlFor='first_name'
@@ -98,14 +106,7 @@ class SignUp extends React.Component {
                             placeholder='Password'
                         />
                     </div>
-                    <div className='signup-password-req'>
-                        <strong>
-                            Important Password requirements:<br />
-                            Must be between 8 and 50 characters<br />
-                            Must not begin or end with a space<br />
-                            Must contain an uppercase, lowercase, number and special character
-                  </strong>
-                    </div>
+                  
                     <button className='submit-btn' type='submit' value='SignUp'>
                         Sign Up
               </button>

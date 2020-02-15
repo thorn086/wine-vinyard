@@ -3,7 +3,7 @@ import Home from '../../pages/Home/Home'
 import API from '../../API'
 import { Switch, Route } from 'react-router-dom'
 import WineContent from '../../pages/WineContent/WineContent'
-import Catigories from '../../pages/wine_catigories/wine_catigories'
+import categories from '../../pages/wine_categories/wine_categories'
 import SignUp from '../../pages/SignUp/SignUp'
 import Login from '../../pages/Login/Login'
 import AddWine from '../../pages/AddWine/addwine'
@@ -18,7 +18,6 @@ class App extends React.Component {
         this.state = {
             wines:[],
         }
-        //fetch(apiURL).then(res => res.json).then(res => this.state = res.wines)
     }
 
 
@@ -37,7 +36,7 @@ class App extends React.Component {
                 error: 'Sorry could not get wines as this time.'
             })
         })
-        //to do: all wine api here to set state
+       
     }
 
     handleAddWine=wine=>{
@@ -68,7 +67,7 @@ class App extends React.Component {
             <WineContext.Provider value={wineContext}>
                 <Switch>
                     <Route exact path='/'><Home /></Route>
-                    <Route exact path='/wine'component={Catigories}></Route>
+                    <Route exact path='/wine'component={categories}></Route>
                     <Route path='/wine/:id' component={WineContent}></Route>
                     <Route path='/signup'><SignUp /></Route>
                     <Route path='/Login' component={Login}></Route>

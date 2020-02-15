@@ -143,9 +143,9 @@ exports.push([module.i, ".wine-selection{\n    display: flex;\n    flex-directio
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/pages/wine_catigories/wine-catigories.css":
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/pages/wine_categories/wine-categories.css":
 /*!**********************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/pages/wine_catigories/wine-catigories.css ***!
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/pages/wine_categories/wine-categories.css ***!
   \**********************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -236,7 +236,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _API__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../API */ "./src/API.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _pages_WineContent_WineContent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../pages/WineContent/WineContent */ "./src/pages/WineContent/WineContent.js");
-/* harmony import */ var _pages_wine_catigories_wine_catigories__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../pages/wine_catigories/wine_catigories */ "./src/pages/wine_catigories/wine_catigories.js");
+/* harmony import */ var _pages_wine_categories_wine_categories__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../pages/wine_categories/wine_categories */ "./src/pages/wine_categories/wine_categories.js");
 /* harmony import */ var _pages_SignUp_SignUp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../pages/SignUp/SignUp */ "./src/pages/SignUp/SignUp.js");
 /* harmony import */ var _pages_Login_Login__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../pages/Login/Login */ "./src/pages/Login/Login.js");
 /* harmony import */ var _pages_AddWine_addwine__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../pages/AddWine/addwine */ "./src/pages/AddWine/addwine.js");
@@ -334,7 +334,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         lineNumber: 68
       },
       __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_wine_catigories_wine_catigories__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_wine_categories_wine_categories__WEBPACK_IMPORTED_MODULE_5__["default"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 68
@@ -2481,7 +2481,7 @@ class WineContent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-      className: "catigories-title",
+      className: "categories-title",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 49
@@ -2577,14 +2577,14 @@ WineContent.contextType = _context__WEBPACK_IMPORTED_MODULE_2__["default"];
 
 /***/ }),
 
-/***/ "./src/pages/wine_catigories/wine-catigories.css":
+/***/ "./src/pages/wine_categories/wine-categories.css":
 /*!*******************************************************!*\
-  !*** ./src/pages/wine_catigories/wine-catigories.css ***!
+  !*** ./src/pages/wine_categories/wine-categories.css ***!
   \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./wine-catigories.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/pages/wine_catigories/wine-catigories.css");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./wine-categories.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/pages/wine_categories/wine-categories.css");
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -2604,9 +2604,9 @@ if (content.locals) {
 if (true) {
   if (!content.locals) {
     module.hot.accept(
-      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./wine-catigories.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/pages/wine_catigories/wine-catigories.css",
+      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./wine-categories.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/pages/wine_categories/wine-categories.css",
       function () {
-        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./wine-catigories.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/pages/wine_catigories/wine-catigories.css");
+        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./wine-categories.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/pages/wine_categories/wine-categories.css");
 
         if (typeof newContent === 'string') {
           newContent = [[module.i, newContent, '']];
@@ -2624,9 +2624,9 @@ if (true) {
 
 /***/ }),
 
-/***/ "./src/pages/wine_catigories/wine_catigories.js":
+/***/ "./src/pages/wine_categories/wine_categories.js":
 /*!******************************************************!*\
-  !*** ./src/pages/wine_catigories/wine_catigories.js ***!
+  !*** ./src/pages/wine_categories/wine_categories.js ***!
   \******************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2641,9 +2641,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_scroll_up__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-scroll-up */ "./node_modules/react-scroll-up/index.js");
 /* harmony import */ var react_scroll_up__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_scroll_up__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _wine_catigories_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./wine-catigories.css */ "./src/pages/wine_catigories/wine-catigories.css");
-/* harmony import */ var _wine_catigories_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_wine_catigories_css__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "/Users/seeuagn/Projects/wine-vinyard/wine-vinyard/src/pages/wine_catigories/wine_catigories.js";
+/* harmony import */ var _wine_categories_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./wine-categories.css */ "./src/pages/wine_categories/wine-categories.css");
+/* harmony import */ var _wine_categories_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_wine_categories_css__WEBPACK_IMPORTED_MODULE_6__);
+var _jsxFileName = "/Users/seeuagn/Projects/wine-vinyard/wine-vinyard/src/pages/wine_categories/wine_categories.js";
 
 
 
@@ -2652,7 +2652,7 @@ var _jsxFileName = "/Users/seeuagn/Projects/wine-vinyard/wine-vinyard/src/pages/
 
 
 
-class Catigories extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+class categories extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   constructor(props) {
     super(props);
 
@@ -2672,20 +2672,20 @@ class Catigories extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
     const type = this.state.type;
     console.log(type);
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "wine-catigories-page",
+      className: "wine-categories-page",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 38
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-      className: "catigories-title",
+      className: "categories-title",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 39
       },
       __self: this
-    }, "Wine Catigories"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }, "Wine categories"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 40
@@ -2780,8 +2780,8 @@ class Catigories extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component 
 
 }
 
-Catigories.contextType = _context__WEBPACK_IMPORTED_MODULE_2__["default"];
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["withRouter"])(Catigories));
+categories.contextType = _context__WEBPACK_IMPORTED_MODULE_2__["default"];
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["withRouter"])(categories));
 
 /***/ }),
 

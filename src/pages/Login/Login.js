@@ -41,7 +41,7 @@ class Login extends React.Component{
       render() {
         return (
           <div className='login-form'>
-              <h2>Login Form</h2>
+              <h2 className='title__page'>Login Form</h2>
               <NavBar />
             <form
               id='log-in'

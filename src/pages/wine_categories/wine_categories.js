@@ -4,9 +4,9 @@ import WineContext from '../../context'
 import Wine from '../../components/Wine/Wine'
 import { Link, withRouter } from 'react-router-dom'
 import ScrollToTop from 'react-scroll-up'
-import './wine-catigories.css'
+import './wine-categories.css'
 
-class Catigories extends React.Component {
+class categories extends React.Component {
 
     static contextType = WineContext
 
@@ -35,8 +35,8 @@ class Catigories extends React.Component {
       
 
         return (
-            <div className='wine-catigories-page'>
-                <h1 className='catigories-title'>Wine Catigories</h1>
+            <div className='wine-categories-page'>
+                <h1 className='title__page wine'>Wine Categories</h1>
                 <NavBar />
                 <div className='btn-group'>
                     <button tag='button' className='red-btn lt-btn rw-btn' onClick={this.handleWineSelection} >Red Wine</button>
@@ -56,7 +56,7 @@ class Catigories extends React.Component {
         )
     }
 }
-export default withRouter(Catigories)
+export default withRouter(categories)
 
 
 

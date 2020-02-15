@@ -14,6 +14,8 @@ input {
     clear: both;
     float: left;
     margin: 8%;
+    color: white;
+    text-shadow:3px 2px black;
   }
   
   form {
@@ -30,19 +32,28 @@ input {
     display: block;
     margin-top: 20px;
     margin: 8%;
-    color: #008000;
+    color: white;
+    text-shadow:3px 2px black;
   }
   
   .btn-submit, .btn-back-login{
     text-transform: uppercase;
     padding: 8px 30px;
     display: inline-block;
-    background-color: rgb(247, 35, 35);
+    border-radius: 10%;
+    background-color: white;
+    margin-top: 2rem;
   }
   .btn-submit{
-      margin-left: 8%;
+      margin-left: 6%;
+      font-size: .9rem;
   }
   .btn-back-login{
-    margin-left: 12%;
+    margin-left: 10%;
     padding-left: 40px;
+    font-size: .9rem;
+}
+.title__page{
+  text-shadow:3px 2px black;
+  color: white;
 }

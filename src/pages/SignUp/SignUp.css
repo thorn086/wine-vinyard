@@ -2,7 +2,7 @@
     margin-top: 10%;
     display:flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 3px solid white;
     font-size: 14px;
 }
 .signup-field{
@@ -11,7 +11,7 @@
     margin:2% ;
 }
 .signup_input{
-    border: 1px solid blue;
+    border: 2px solid white;
     height: 30px;
     padding: 5%;
 }
@@ -20,5 +20,15 @@
     text-transform: uppercase;
     padding: 8px 20px;
     display: inline-block;
-    background-color: rgb(247, 35, 35);
+    background-color:white;
+    border-radius: 3rem;
+    margin: 3rem 1rem;
+}
+.title__page{
+    margin-right: 2rem;
+}
+.signup-password-req{
+    color: white;
+    text-shadow:3px 2px black;
+    margin: 1rem;
 }

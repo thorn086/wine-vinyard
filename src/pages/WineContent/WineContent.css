@@ -21,8 +21,12 @@
     text-transform: uppercase;
     padding: 8px 30px;
     display: inline-block;
-    background-color: rgb(247, 35, 35);
+    border-radius: 3rem;
+    background-color: white;
 }
 .back-btn{
     margin-left: 90px;
+}
+.title__page.s_wine{
+    margin: 4rem 2rem 0 0;
 }

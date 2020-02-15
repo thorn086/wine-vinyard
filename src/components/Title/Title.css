@@ -13,7 +13,7 @@
     
 }
 .letter{
-    font-size: 45px;
+    font-size: 55px;
     color:rgb(245, 6, 6);
 }
 .heading-main{
@@ -25,7 +25,7 @@ animation-name: moveInLeft;
 animation-duration: 3s;
 animation-timing-function: ease-out;
 animation-fill-mode: both;
-margin-top: 9rem;
+margin-top: 13rem;
 }
 .word-sub{
     color:rgb(65, 255, 78);
@@ -45,9 +45,9 @@ animation-fill-mode: both;
 }
 
 .site-description{
-    margin: 25px 10px 0 0;
+    margin: 35px 10px 0 0;
     border: 2px solid white;
-    font-size: 11px;
+    font-size: .84rem;
     border-radius: 5%;
     color: black;
     background-color: white;

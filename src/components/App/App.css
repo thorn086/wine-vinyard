@@ -11,12 +11,18 @@ body {
     line-height: 1.7;
     padding: 15px;
     width:100%;
-    background-color: rgb(167, 166, 166);
+    background-image: linear-gradient( to bottom, rgb(167, 166, 166) , rgb(61, 61, 128), black);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+body, html, #root{
+    height: 100%;
 }
 
 .header{
     text-align: center;
-    height: 135vh;
+    height: 175vh;
     background-image:linear-gradient(
         to right bottom,
         #616010c6,

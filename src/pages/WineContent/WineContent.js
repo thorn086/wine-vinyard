@@ -48,7 +48,7 @@ class WineContent extends React.Component {
         return (
 
             <div className='wine-content-page'>
-                <h1 className='catigories-title'>Selected Wine</h1>
+                <h1 className='title__page s_wine'>Selected Wine</h1>
                 <NavBar />
                 {info.map(item => {
                    
