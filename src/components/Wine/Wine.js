@@ -11,7 +11,6 @@ class Wine extends React.Component {
 
     render() {
         const { type } = this.props;
-
         let { wines } = this.context
         if (type !== 'All') {
             wines = this.context.wines.filter(wine => wine.winecat === type)
