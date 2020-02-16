@@ -36,3 +36,63 @@
 .back-btn, .wine__delete{
     margin-top: 1.5rem;
 }
+@media (min-width:425px){
+    .wine-selection{
+        width:90%;
+        margin-left: 1rem;
+        
+    }
+    .back-btn{
+        margin-left: 5.5rem;
+    }
+}
+@media (min-width:512px){
+    .wine-selection{
+        width:70%;
+        margin-left: 4rem;
+        margin-top: 1rem;
+    }
+    .back-btn{
+        margin-left: 4.5rem;
+    }
+}
+@media (min-width:700px){
+    .wine-selection{
+        width:55%;
+        margin-left: 8.5rem;
+        margin-top: 1rem;
+    }
+    .back-btn{
+        margin-left: 5.5rem;
+    }
+}
+@media (min-width:928px){
+    .wine-selection{
+        width:40%;
+        margin-left: 15rem;
+        margin-top: 2rem;
+    }
+    .back-btn{
+        margin-left: 5.5rem;
+    }
+}
+@media (min-width:1158px){
+    .wine-selection{
+        width:40%;
+        margin-left: 20rem;
+        margin-top: 4rem;
+    }
+    .back-btn{
+        margin-left: 4.5rem;
+    }
+}
+@media (min-width:1350px){
+    .wine-selection{
+        width:35%;
+        margin-left: 27rem;
+        margin-top: 4rem;
+    }
+    .back-btn{
+        margin-left: 4.5rem;
+    }
+}

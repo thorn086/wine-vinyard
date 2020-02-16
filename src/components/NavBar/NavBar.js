@@ -6,6 +6,7 @@ import TokenService from '../../services/token-services'
 class NavBar extends React.Component {
     handleLogoutClick = () => {
         TokenService.clearAuthToken()
+        window.location.reload();
     }
 
     renderLogoutLink() {
