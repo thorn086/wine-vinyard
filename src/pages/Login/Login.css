@@ -14,8 +14,8 @@ input {
     clear: both;
     float: left;
     margin: 8%;
-    color: white;
-    text-shadow:3px 2px black;
+    color: rgb(255, 248, 50);
+    text-shadow:1px 1px black;
   }
   
   form {
@@ -32,8 +32,8 @@ input {
     display: block;
     margin-top: 20px;
     margin: 8%;
-    color: white;
-    text-shadow:3px 2px black;
+    color: rgb(255, 248, 50);
+    text-shadow:1px 1px black;
   }
   
   .btn-submit, .btn-back-login{
@@ -42,7 +42,7 @@ input {
     display: inline-block;
     border-radius: 10%;
     background-color: white;
-    margin-top: 2rem;
+    margin: 2rem .5rem;
   }
   .btn-submit{
       margin-left: 6%;
@@ -56,4 +56,55 @@ input {
 .title__page{
   text-shadow:3px 2px black;
   color: white;
+}
+@media (min-width: 410px){
+  form{
+    width: 80%;
+    margin-left: 2.5rem;
+  }
+  .btn-submit, .btn-back-login{
+    margin-left: 1.65rem;
+  }
+  label, .login_demo-creds{
+    font-size: 18px;
+  }
+}
+@media (min-width: 525px){
+  form{
+    width: 70%;
+    margin-left: 4rem;
+  }
+  .btn-submit, .btn-back-login{
+    margin-left: 2.2rem;
+  }
+}
+@media (min-width: 725px){
+  form{
+    width: 68%;
+    margin-left: 8rem;
+  }
+  .btn-submit, .btn-back-login{
+    margin-left:5.65rem;
+  }
+  label, .login_demo-creds{
+    font-size: 20px;
+  }
+}
+@media (min-width: 1000px){
+  form{
+    width: 55%;
+    margin-left: 16rem;
+  }
+  .btn-submit, .btn-back-login{
+    margin-left:6.65rem;
+  }
+}
+@media (min-width: 1350px){
+  form{
+    width: 45%;
+    margin-left: 27rem;
+  }
+  .btn-submit, .btn-back-login{
+    margin-left:8rem;
+  }
 }

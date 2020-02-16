@@ -15,20 +15,97 @@
     height: 30px;
     padding: 5%;
 }
-.submit-btn, .back-btn-signup{
-    margin-top: 3%;
+.submit-btn{
     text-transform: uppercase;
-    padding: 8px 20px;
+    padding: 8px 12px;
     display: inline-block;
     background-color:white;
     border-radius: 3rem;
-    margin: 3rem 1rem;
+    margin: 2.5rem;
+    font-size: 14px;
 }
 .title__page{
     margin-right: 2rem;
+    margin-top: 4rem;
+    font-size: 35px;
 }
-.signup-password-req{
-    color: white;
-    text-shadow:3px 2px black;
+.signup-password-req, .signup_label{
+    color: rgb(255, 248, 50);
+    text-shadow:1px 1px black;
     margin: 1rem;
+}
+
+@media (min-width: 510px){
+    .signup-form-box{
+        font-size: 18px;
+    }
+    .signup-field{
+       padding: 1rem 2rem;
+    }
+    .signup_input{
+        padding: 7%;
+        margin: 0 0 2rem 2.5rem;
+    }
+    .submit-btn, .back-btn-signup{
+        margin: 1rem 4rem 3rem 4rem;
+        font-size: 18px;
+    }
+    .signup_label{
+        padding-right: 2rem;
+    }
+    .title__page{
+        margin-right: 1rem;
+        margin-top: 4rem;
+        font-size: 45px;
+    }
+    .signup-password-req{
+       font-size: 18px;
+        margin: 2rem;
+    }
+}
+@media (min-width: 745px){
+    .signup-form-box{
+        width: 75%;
+        margin-top: 4%;
+        margin-left: 5.5rem;
+        font-size: 20px;
+    }
+    .signup-field{
+       padding: 1.5rem 1.5rem;
+    }
+    .signup_input{
+        margin: 0 0 2rem 2.5rem;
+       padding: 1.2rem 0 1.2rem 1rem;
+       width: auto;
+    }
+    .submit-btn, .back-btn-signup{
+        margin: 1rem 8rem 3rem 8.5rem;
+        font-size: 18px;
+    }
+    .signup_label{
+        padding-right: .5rem;
+    }
+    .title__page{
+        margin-right: 0;
+    }
+    .signup-password-req{
+       font-size: 18px;
+        margin: 2rem;
+    }
+}
+@media (min-width: 906px){
+    .signup-form-box{
+        width: 60%;
+        margin-left: 12.5rem; 
+    }
+    .title__page{
+        font-size: 50px;
+    }
+}
+@media (min-width: 1028px){
+    .signup-form-box{
+        width: 45%;
+        margin-left: 18rem;
+       
+    }
 }

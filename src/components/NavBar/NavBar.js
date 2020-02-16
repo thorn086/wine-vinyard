@@ -12,26 +12,35 @@ class NavBar extends React.Component {
         return (
             <div className='navigation__item'>
                 <li className='navigation__item' onClick={this.handleLogoutClick}>
-                    <Link to='/' style={{ textDecoration: 'none',left:'0', fontSize: '1rem', fontWeight: '300', color: 'white', textTransform: 'uppercase', backgroundImage: 'linear-gradient(120deg, #4c4cf2 80%, #4c4cf2 5%, white 92%', padding: '.5rem', borderRadius: '45%', border: '2px solid black', boxShadow: '0 1rem 3rem black', backgroundSize: '100%' }}> Logout</Link>
+                    <button className='red-btn logout-btn'>
+                        <Link to='/' style={{ textDecoration: 'none', color: 'white', padding: '1rem' }}> Logout</Link>
+                    </button>
                 </li>
                 <li className='navigation__item'>
-                    <Link to='/' style={{ textDecoration: 'none', fontSize: '1rem', fontWeight: '300', color: 'white', textTransform: 'uppercase', backgroundImage: 'linear-gradient(120deg, #4c4cf2 80%, #4c4cf2 5%, white 92%', padding: '.5rem', borderRadius: '45%', border: '2px solid black', boxShadow: '0 1rem 3rem black', backgroundSize: '100%' }}>Home</Link>
+                    <button className='red-btn home-btn'>
+                        <Link to='/' style={{ textDecoration: 'none', color: 'white', padding: '1rem' }}>Home</Link>
+                    </button>
                 </li>
             </div>
         )
     }
-
     toggleLoginLink() {
         return (
             <div className='navigation__item'>
                 <li className='navigation__item'>
-                    <Link to='/login' style={{ textDecoration: 'none', fontSize: '1rem', fontWeight: '300', color: 'white', textTransform: 'uppercase', backgroundImage: 'linear-gradient(120deg, #4c4cf2 80%, #4c4cf2 5%, white 92%', padding: '.5rem ', borderRadius: '45%', border: '2px solid black', boxShadow: '0 1rem 3rem black', backgroundSize: '100%' }}>Login</Link>
+                    <button className='red-button login-btn'>
+                        <Link to='/login' style={{ textDecoration: 'none', color: 'white', padding: '1rem' }}>Login</Link>
+                    </button>
                 </li>
                 <li className='navigation__item'>
-                    <Link to='/signup' style={{ textDecoration: 'none',fontSize: '1rem', fontWeight: '300', color: 'white', textTransform: 'uppercase', backgroundImage: 'linear-gradient(120deg, #4c4cf2 80%, #4c4cf2 5%, white 92%', padding: '.5rem ', borderRadius: '45%', border: '2px solid black', boxShadow: '0 1rem 3rem black', backgroundSize: '100%' }}>Sign Up</Link>
+                    <button className='red-button signup-btn'>
+                        <Link to='/signup' style={{ textDecoration: 'none', color: 'white', padding: '1rem' }}>Sign Up</Link>
+                    </button>
                 </li>
                 <li className='navigation__item'>
-                    <Link to='/' style={{ textDecoration: 'none', fontSize: '1rem', fontWeight: '300', color: 'white', textTransform: 'uppercase', backgroundImage: 'linear-gradient(120deg, #4c4cf2 80%, #4c4cf2 5%, white 92%', padding: '.5rem', borderRadius: '45%', border: '2px solid black', boxShadow: '0 1rem 3rem black', backgroundSize: '100%' }}>Home</Link>
+                    <button className='red-button home-btn'>
+                        <Link to='/' style={{ textDecoration: 'none', color: 'white', padding: '1rem' }}>Home</Link>
+                    </button>
                 </li>
             </div>
         )

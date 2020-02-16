@@ -82,3 +82,35 @@ animation-fill-mode: both;
         transform: translateX(0);
     }
 }
+
+@media (min-width:760px){
+   
+   
+    .letter{
+        font-size: 75px;
+        
+    }
+    .heading-main{
+    
+    font-size: 35px;
+    margin-top: 20rem;
+  
+    }
+    .word-sub{
+       
+        font-size: 35px;
+        
+        
+    }
+    .heading-sub{
+  
+    font-size: 25px;
+ 
+    }
+    
+    .site-description{
+        font-size: 1rem;
+        
+        
+    }
+}

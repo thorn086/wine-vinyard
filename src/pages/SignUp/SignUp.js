@@ -65,12 +65,14 @@ class SignUp extends React.Component {
                             name='first_name'
                             id='first_name'
                             placeholder='First Name'
+                            required
                         />
                     </div>
                     <div className='signup-field'>
                         <label
                             htmlFor='last_name'
                             className='signup_label'
+                            required
                         >Last Name</label>
                         <input
                             className='signup_input'
@@ -78,6 +80,7 @@ class SignUp extends React.Component {
                             name='last_name'
                             id='last_name'
                             placeholder='Last Name'
+                            required
                         />
                     </div>
                     <div className='signup-field'>
@@ -91,6 +94,7 @@ class SignUp extends React.Component {
                             name='email'
                             id='email'
                             placeholder='Email'
+                            required
                         />
                     </div>
                     <div className='signup-field'>
@@ -104,6 +108,7 @@ class SignUp extends React.Component {
                             name='password'
                             id='password'
                             placeholder='Password'
+                            required
                         />
                     </div>
                   
