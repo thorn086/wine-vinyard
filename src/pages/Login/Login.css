@@ -84,7 +84,7 @@ input {
     margin-left: 8rem;
   }
   .btn-submit, .btn-back-login{
-    margin-left:5.65rem;
+    margin-left:5rem;
   }
   label, .login_demo-creds{
     font-size: 20px;
@@ -96,7 +96,7 @@ input {
     margin-left: 16rem;
   }
   .btn-submit, .btn-back-login{
-    margin-left:6.65rem;
+    margin-left:6rem;
   }
 }
 @media (min-width: 1350px){
@@ -105,6 +105,6 @@ input {
     margin-left: 27rem;
   }
   .btn-submit, .btn-back-login{
-    margin-left:8rem;
+    margin-left:7.5rem;
   }
 }
