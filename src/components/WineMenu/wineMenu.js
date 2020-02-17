@@ -9,14 +9,14 @@ class WineMenu extends React.Component {
 renderLogedOut(){
     return(
         <button className='wine-btn btn-white btn-animated'>
-        <Link to='/login' style={{ textDecoration:'none', color:'black',fontFamily: 'Pacifico, cursive'}}>Login</Link>
+        <Link to='/login' style={{ textDecoration:'none', color:'black',fontFamily: 'Sriracha cursive',padding:'20px'}}>Login</Link>
     </button>
     )
 }
 renderLogin(){
 return(
     <button className='wine-btn btn-white btn-animated'>
-    <Link to='/wine' style={{ textDecoration:'none', color:'black',fontFamily: 'Pacifico, cursive'}}>Wines</Link>
+    <Link to='/wine' style={{ textDecoration:'none', color:'black',fontFamily: 'Sriracha cursive',padding:'20px'}}>Wines</Link>
 </button>
 )
 }

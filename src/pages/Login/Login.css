@@ -109,7 +109,7 @@ input {
 @media (min-width: 1224px){
   form{
     width: 45%;
-    margin-left: 23rem;
+    margin-left: 25rem;
   }
   .btn-submit, .btn-back-login{
     margin-left:7.5rem;
