@@ -36,3 +36,6 @@ body, html, #root{
 h1{
     text-align: center;
 }
+button:focus{
+    outline: none;
+}

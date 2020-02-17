@@ -195,10 +195,10 @@ class AddWine extends React.Component {
                         </WineErr>
                     </div>
                     <div className='addwine-button'>
-                        <button type='submit' className='addwine-btn'>
+                        <button type='submit' className='red-btn addwine-btn'>
                             Add Wine
                       </button>
-                        <button className='back' tag='button' onClick={() => this.props.history.goBack()}>Back</button>
+                        <button className=' red-btn back-wine' tag='button' onClick={() => this.props.history.goBack()}>Back</button>
 
                     </div>
                 </WineForm>

@@ -1,22 +1,42 @@
+
 .addwine-button{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    
 }
 
-.addwine-btn, .back{
-    margin: 3rem 1rem 6rem 0;
-    height:50px;
-    width: 100px;
+.addwine-btn,.back-wine {
+    
+    margin: 1rem 0 1rem 2rem;
 }
-.addwine-btn{
-    margin-left: 2rem;
 
-}
-@media(min-width:411px){
-    .addwine-btn, .back{
-        margin: 1rem;
-        height:50px;
-        width: 100px;
+
+@media(min-width:375px){
+    .addwine-btn,.back-wine {
+    
+        margin: 1rem 0 1rem 2rem;
     }
 }
+@media(min-width:462px){
+    .addwine-btn,.back-wine {
+    
+        margin: 1rem 0 1rem 2.5rem;
+    }
+}
+@media(min-width:532px){
+    .addwine-btn,.back-wine {
+    padding: 5%;
+    margin: 1rem 0 1rem 5rem;
+    }
+    .addwine-button{
+        width: 1000px;
+    }
+}
+@media(min-width:732px){
+    .addwine-btn,.back-wine {
+    
+        margin: 1rem 0 1rem 6rem;
+    }
+}
+
+

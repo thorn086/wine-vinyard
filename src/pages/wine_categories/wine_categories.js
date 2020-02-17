@@ -38,14 +38,15 @@ class categories extends React.Component {
                 <h1 className='title__page wine'>Wine Categories</h1>
                 <NavBar />
                 <div className='instructions'>
-                    <p className='text'>Click on the Wine name to see what peolpe are saying. Otherwise, feel free to add your own by selecting "ADD A WINE" at the bottom.
-                     You can also sort wine by their color by selecting red or white.</p>
+                    <p className='text'>Click on the Wine name to see what peolpe are saying.
+                     You can sort wine by their color just select RED or WHITE. Otherwise, you can add a 
+                     wine by selecting "ADD WINE".</p>
                 </div>
                 <div className='btn-group'>
                     <button tag='button' className='red-btn lt-btn rw-btn' onClick={this.handleWineSelection} ><span className='red'>Red</span> Wine</button>
                     <button tag='button' className='red-btn rt-btn ww-btn' onClick={this.handleWineSelection} ><span className='white'>White</span> Wine</button>
                     <button className='red-btn add_wine'>
-                        <Link to='/addwine' style={{ textDecoration: 'none', fontSize: '16px', color: ' rgb(252, 252, 252)', padding: '1px', textAlign: 'center' }}><span className='white'>ADD</span> Wine</Link>
+                        <Link to='/addwine' style={{ textDecoration: 'none', fontSize: '16px', color: ' rgb(252, 252, 252)', padding: '1px', textAlign: 'center'}}><span className='white'>ADD</span> Wine</Link>
                     </button>
                 </div>
                 <Wine type={type} />

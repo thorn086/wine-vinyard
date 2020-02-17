@@ -16,6 +16,7 @@ input {
     margin: 8%;
     color: rgb(255, 248, 50);
     text-shadow:1px 1px black;
+    font-family: 'Fjalla One', sans-serif;
   }
   
   form {
@@ -34,6 +35,7 @@ input {
     margin: 8%;
     color: rgb(255, 248, 50);
     text-shadow:1px 1px black;
+    font-family: 'Fjalla One', sans-serif;
   }
   
   .btn-submit, .btn-back-login{
@@ -56,6 +58,7 @@ input {
 .title__page{
   text-shadow:3px 2px black;
   color: white;
+  font-family: 'Lemonada', cursive;
 }
 @media (min-width: 410px){
   form{

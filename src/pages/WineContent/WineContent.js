@@ -63,7 +63,7 @@ class WineContent extends React.Component {
                             </section>
                             <section className='submit-btns'>
                                 <button className='back-btn' tag='button' onClick={() => this.props.history.goBack()}>Back</button>
-                                <button className='red-btn rt-btn wine__delete' type='button' onClick={this.handleDeleteWine}>Delete</button>
+                                <button className='red-btn rt-btn' type='button' onClick={this.handleDeleteWine}><span className=' wine__delete'>DELETE</span></button>
                             </section>
                         </div>
                     )

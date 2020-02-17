@@ -8,33 +8,40 @@
     text-align: center;
     color: #f8fc3a;
     text-shadow: 2px 2px black;
+    font-family: 'Sriracha', cursive;
 }
 
 .wine-info{
     font-size: 16px;
     padding: 1rem;
     color: white;
+    font-weight: 700;
     border:2px solid white;
     box-shadow: 1rem 1rem black;
     line-height: 2;
     margin: 2rem;
+    font-family: 'Fjalla One', sans-serif;
 }
 .back-btn{
     text-transform: uppercase;
-    padding: 8px 30px;
+    color:white;
     display: inline-block;
     border-radius: 3rem;
-    background-color: white;
-}
-.back-btn{
-    margin-left: 3rem;
+    background-color:black;
+    margin-left: 1rem;
     margin-right: 1.5rem;
+}
+.wine__delete{
+    color: red;
 }
 .title__page.s_wine{
     margin: 6rem 2rem 0 0;
 }
 .back-btn, .wine__delete{
     margin-top: 1.5rem;
+    padding: 8px 30px;
+    font-size: 16px;
+
 }
 @media (min-width:425px){
     .wine-selection{
@@ -43,7 +50,7 @@
         
     }
     .back-btn{
-        margin-left: 5.5rem;
+        margin-left: 3.5rem;
     }
 }
 @media (min-width:512px){
@@ -53,7 +60,7 @@
         margin-top: 1rem;
     }
     .back-btn{
-        margin-left: 4.5rem;
+        margin-left: 2.5rem;
     }
 }
 @media (min-width:700px){
@@ -63,7 +70,11 @@
         margin-top: 1rem;
     }
     .back-btn{
-        margin-left: 5.5rem;
+        margin-left: 3.2rem;
+        
+    }
+    .back-btn, .wine__delete{
+        font-size: 20px;
     }
 }
 @media (min-width:928px){
@@ -73,7 +84,7 @@
         margin-top: 2rem;
     }
     .back-btn{
-        margin-left: 5.5rem;
+        margin-left: 2.2rem;
     }
 }
 @media (min-width:1158px){
@@ -83,7 +94,7 @@
         margin-top: 4rem;
     }
     .back-btn{
-        margin-left: 4.5rem;
+        margin-left: 5.5rem;
     }
 }
 @media (min-width:1350px){
@@ -92,7 +103,5 @@
         margin-left: 27rem;
         margin-top: 4rem;
     }
-    .back-btn{
-        margin-left: 4.5rem;
-    }
+    
 }

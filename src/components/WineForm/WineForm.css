@@ -3,7 +3,6 @@
 .Wine__form {
     color: black;
     padding: 2px;
-    width: 90%;
   }
  
   h2{
@@ -39,10 +38,10 @@
   
   
   .Wine__form button {
-    background-color: rgb(250, 248, 248);
+    background-color: black;
     border-radius: 3rem;
-    border: 0;
-    color: black;
+    border: 1px solid white;
+    color:white;
     display: block;
     font-size: 18px;
     font-weight: bold;
@@ -66,25 +65,22 @@
   .errorMessage{
       padding: 2%;
       margin-left: 40px;
-      font-size: 14px;
+      font-size: 15px;
+      font-weight: 600;
       color: red;
-      text-shadow: 2px 2px rgb(15, 2, 2);
+      text-shadow: 2px 2px black ;
   }
   .add__wine{
     margin-top: 5rem;
     font-size: 2rem;
   }
 
-@media(min-width:411px){
+@media(min-width:375px){
   .addwine__style, .Wine__form{
-    width:80%;
-    margin: 2rem;
+    width:90%;
+    margin: 1rem;
   }
-  .Wine__form {
-    width: 80%;
-    padding: 1rem;
-    margin: auto;
-  }
+ 
   .Wine__form label {
     font-size: 18px;
     padding-bottom: 1rem;
@@ -100,23 +96,32 @@
     width: 15rem;
   }
   #date, #winecat, #content{
-    margin-left: 1rem;
+    margin-left: 1.4rem;
   }
   .errorMessage{
     padding: 1%;
-    margin-left: 10px;
-    font-size: 14px;
+    margin-left: 15px;
+    font-size: 17px;
 }
+}
+@media(min-width:462px){
+  .addwine__style, .Wine__form{
+    width:85%;
+    margin: 2rem;
+  }
+  #date, #winecat, #content{
+    margin-left: 1.7rem;
+  }
 }
 
 
-  @media (min-width: 632px){
+  @media (min-width: 532px){
 .addwine__style{
-  width: 60%;
+  width: 80%;
   margin: 4rem 2rem;
 }
 .Wine__form {
-  width: 60%;
+  width: 80%;
   padding: 1rem;
   margin: 4rem 2rem;
 }
@@ -137,5 +142,163 @@
 #date, #winecat, #content{
   margin-left: 1.5rem;
 }
+.errorMessage{
+  padding: 2%;
+  margin-left: 15px;
+}
 
+}
+@media (min-width: 732px){
+  .addwine__style{
+    width: 80%;
+    margin: 4rem 2rem;
   }
+  .Wine__form {
+    width: 80%;
+    padding: 1rem;
+    margin: 4rem 2rem;
+  }
+  .Wine__form label {
+    font-size: 18px;
+    padding-bottom: 1rem;
+    display: inline-block;
+  }
+  
+  .Wine__form input,
+  .Wine__form textarea,
+  .Wine__form select, 
+  .Wine__form option{
+    font-size: 15px;
+    padding: 8px;
+    width: 25rem;
+  }
+  #date, #winecat, #content{
+    margin-left: 1.5rem;
+  }
+  .errorMessage{
+    padding: 2%;
+    margin-left: 15px;
+  }
+  
+  }
+@media (min-width: 922px){
+  .addwine__style{
+    width: 60%;
+    margin: 1rem 10rem;
+  }
+  .Wine__form {
+    width: 60%;
+    padding: 1rem;
+    margin: 1rem 2rem;
+  }
+  .Wine__form label {
+    font-size: 18px;
+    padding-bottom: 1rem;
+    display: inline-block;
+  }
+  
+  .Wine__form input,
+  .Wine__form textarea,
+  .Wine__form select, 
+  .Wine__form option{
+    font-size: 15px;
+    padding: 8px;
+    width: 25rem;
+  }
+  #date, #winecat, #content{
+    margin-left: 1.5rem;
+  }
+  .errorMessage{
+    padding: 1.5%;
+    margin-left: 19px;
+  }
+  }
+  @media (min-width: 1062px){
+    .addwine__style{
+      width: 60%;
+      margin: 1rem 10rem;
+    }
+    .Wine__form {
+      width: 60%;
+      padding: 1rem;
+      margin: 1rem 2rem;
+    }
+    .Wine__form label {
+      font-size: 18px;
+      padding-bottom: 1rem;
+      display: inline-block;
+    }
+    
+    .Wine__form input,
+    .Wine__form textarea,
+    .Wine__form select, 
+    .Wine__form option{
+      font-size: 15px;
+      padding: 8px;
+      width: 25rem;
+    }
+    #date, #winecat, #content{
+      margin-left: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1240px){
+  
+    .Wine__form, .addwine__style {
+      width: 65%;
+      padding: 2.5rem;
+      margin: 1rem 10rem;
+    }
+    .Wine__form label {
+      font-size: 18px;
+      padding-bottom: 1rem;
+      display: inline-block;
+    }
+    
+    .Wine__form input,
+    .Wine__form textarea,
+    .Wine__form select, 
+    .Wine__form option{
+      font-size: 15px;
+      padding: 8px;
+      width: 25rem;
+    }
+    #date, #winecat, #content{
+      margin-left: 2rem;
+    }
+    .errorMessage{
+      padding: 1.5%;
+      margin-left: 30px;
+    }
+  }
+
+  @media (min-width: 1500px){
+  
+    .Wine__form, .addwine__style {
+      width: 65%;
+      padding: 2.5rem;
+      margin: 1rem 12rem;
+    }
+    .Wine__form label {
+      font-size: 18px;
+      padding-bottom: 1rem;
+      display: inline-block;
+    }
+    
+    .Wine__form input,
+    .Wine__form textarea,
+    .Wine__form select, 
+    .Wine__form option{
+      font-size: 15px;
+      padding: 8px;
+      width: 25rem;
+    }
+    #date, #winecat, #content{
+      margin-left: 2.5rem;
+    }
+    .errorMessage{
+      padding: 1.5%;
+      margin-left: 30px;
+    }
+  }
+  
