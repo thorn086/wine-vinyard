@@ -4,7 +4,7 @@
     padding: 1rem;
     box-shadow: 0 3rem 6rem black;
     border: 2px solid white;
-    background-image: linear-gradient(to right, rgba(120, 120, 120, 0), rgb(171, 170, 170) 40%);
+    background-image: linear-gradient(to right, #c11b76f9, rgb(171, 170, 170) 95%);
     transform: skewX(-5deg);
     
 }
@@ -23,9 +23,10 @@
     padding-left: 35px;
 }
 .instructions{
-    color:black;
+    color:white;
     padding: 1.5rem;
-    background-color: rgb(211, 211, 148);
+    background-image: linear-gradient(to right, #c11b76f9, rgb(171, 170, 170) 98%);
+
     border: 2px solid white;
     width: 98%;
    margin:.4rem;

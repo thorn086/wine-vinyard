@@ -13,27 +13,29 @@ input {
     display: block;
     clear: both;
     float: left;
+    font-weight:900;
     margin: 8%;
-    color: rgb(255, 248, 50);
+    color:  #fff290;
     text-shadow:1px 1px black;
     font-family: 'Fjalla One', sans-serif;
   }
   
   form {
     margin-top: 15px;
+    background-image: linear-gradient(to right, #c11b76f9, rgb(171, 170, 170) 98%);
   }
   
-  .error-message {
-    color: red;
+  .errorMessage {
+    color:  #fff290;
   }
   
   .login_demo-creds {
     font-size: 14px;
     text-align: left;
     display: block;
-    margin-top: 20px;
+    padding-top: 25px;
     margin: 8%;
-    color: rgb(255, 248, 50);
+    color: #fff290;
     text-shadow:1px 1px black;
     font-family: 'Fjalla One', sans-serif;
   }
@@ -43,7 +45,8 @@ input {
     padding: 8px 30px;
     display: inline-block;
     border-radius: 10%;
-    background-color: white;
+    color: white;
+    background-color: black;
     margin: 2rem .5rem;
   }
   .btn-submit{
@@ -56,10 +59,11 @@ input {
     font-size: .9rem;
 }
 .title__page{
-  text-shadow:3px 2px black;
-  color: white;
-  font-family: 'Lemonada', cursive;
+  text-shadow:1px 1px white;
+  color:  #c11b76;
+  font-family: 'Sriracha', cursive;
 }
+
 @media (min-width: 410px){
   form{
     width: 80%;
@@ -102,10 +106,10 @@ input {
     margin-left:6rem;
   }
 }
-@media (min-width: 1350px){
+@media (min-width: 1224px){
   form{
     width: 45%;
-    margin-left: 27rem;
+    margin-left: 23rem;
   }
   .btn-submit, .btn-back-login{
     margin-left:7.5rem;

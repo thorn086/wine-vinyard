@@ -1,8 +1,9 @@
 .heading-primary {
     color:#fff;
+    text-shadow: 1px 1px black;
     text-transform: uppercase;
     backface-visibility: hidden;
-    font-family: 'Lemonada', cursive;
+    font-family: 'Sriracha', cursive;
 }
 .text-box{
     position: absolute; 
@@ -15,8 +16,8 @@
 }
 .letter{
     font-size: 55px;
-    color:rgb(245, 6, 6);
-    font-family: 'Pacifico', cursive;
+    color: #c11b76;
+    font-family: 'Sriracha', cursive;
 }
 .heading-main{
 display:block;
@@ -30,10 +31,10 @@ animation-fill-mode: both;
 margin-top: 13rem;
 }
 .word-sub{
-    color:rgb(65, 255, 78);
-    font-weight: 900;
+    color: #c11b76;
+    font-weight: 1000;
     font-size: 25px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Sriracha', cursive;
     
 }
 .heading-sub{

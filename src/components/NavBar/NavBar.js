@@ -14,12 +14,12 @@ class NavBar extends React.Component {
             <div className='navigation__item'>
                 <li className='navigation__item' onClick={this.handleLogoutClick}>
                     <button className='red-btn logout-btn'>
-                        <Link to='/' style={{ textDecoration: 'none', color: '#f8fc3a', padding: '1rem',fontFamily: 'Lemonada, cursive' }}> Logout</Link>
+                        <Link to='/' style={{ textDecoration: 'none', color: '#fff290', padding: '1rem',fontFamily: 'Lemonada, cursive' }}> Logout</Link>
                     </button>
                 </li>
                 <li className='navigation__item'>
                     <button className='red-btn home-btn'>
-                        <Link to='/' style={{ textDecoration: 'none', color: '#f8fc3a', padding: '1rem',fontFamily: 'Lemonada, cursive' }}>Home</Link>
+                        <Link to='/' style={{ textDecoration: 'none', color: '#fff290', padding: '1rem',fontFamily: 'Lemonada, cursive' }}>Home</Link>
                     </button>
                 </li>
             </div>
@@ -30,17 +30,17 @@ class NavBar extends React.Component {
             <div className='navigation__item'>
                 <li className='navigation__item'>
                     <button className='red-button login-btn'>
-                        <Link to='/login' style={{ textDecoration: 'none', color: '#f8fc3a', padding: '1rem',fontFamily: 'Lemonada, cursive' }}>Login</Link>
+                        <Link to='/login' style={{ textDecoration: 'none', color: '#fff290', padding: '1rem',fontFamily: 'Lemonada, cursive' }}>Login</Link>
                     </button>
                 </li>
                 <li className='navigation__item'>
                     <button className='red-button signup-btn'>
-                        <Link to='/signup' style={{ textDecoration: 'none', color: '#f8fc3a', padding: '1rem',fontFamily: 'Lemonada, cursive' }}>Sign Up</Link>
+                        <Link to='/signup' style={{ textDecoration: 'none', color: '#fff290', padding: '1rem',fontFamily: 'Lemonada, cursive' }}>Sign Up</Link>
                     </button>
                 </li>
                 <li className='navigation__item'>
                     <button className='red-button home-btn'>
-                        <Link to='/' style={{ textDecoration: 'none', color: '#f8fc3a', padding: '1rem',fontFamily: 'Lemonada, cursive' }}>Home</Link>
+                        <Link to='/' style={{ textDecoration: 'none', color: ' #fff290', padding: '1rem',fontFamily: 'Lemonada, cursive' }}>Home</Link>
                     </button>
                 </li>
             </div>

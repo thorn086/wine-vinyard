@@ -56,10 +56,10 @@ class WineContent extends React.Component {
                         <div className='wine-selection' key={item.id}>
                             <section className='wine-info'>
                                 <h2 className='individual-info'>{item.name}</h2>
-                                <p> Year made:{item.date}</p>
-                                <p>Thoughts:{item.content}</p>
-                                <p>Rating:{item.rating}</p>
-                                <p>Wine added by UserID ({item.author})</p>
+                                <p> Year made:  {item.date}</p>
+                                <p>Thoughts:  {item.content}</p>
+                                <p>Rating:  {item.rating}</p>
+                                <p>Wine added by UserID ( {item.author} )</p>
                             </section>
                             <section className='submit-btns'>
                                 <button className='back-btn' tag='button' onClick={() => this.props.history.goBack()}>Back</button>
