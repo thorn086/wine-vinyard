@@ -1,10 +1,10 @@
-# Wine Vinyard
+# Wine Vineyard
 
 An application built for browsing wine, adding a wine and leaving comments about the wine a user adds.
 
 ## Technology
 
-Wine Vinyard was built using React and CSS.
+Wine Vineyard was built using React and CSS.
 
 ## API Repo
 
@@ -14,6 +14,6 @@ https://github.com/thorn086/wine-vinyard-api
 
 https://wine-vinyard-app.now.sh/
 
-![WIne Vinyard Home Page](src/img/home.png)
-![WIne Vinyard Wine Selections Page](src/img/wine-selections.png)
-![WIne Vinyard Individual Wine Page](src/img/Indiv-wine.png)
+![WIne Vineyard Home Page](src/img/home.png)
+![WIne Vineyard Wine Selections Page](src/img/wine-selections.png)
+![WIne Vineyard Individual Wine Page](src/img/Indiv-wine.png)

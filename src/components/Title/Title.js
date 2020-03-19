@@ -9,7 +9,7 @@ class Title extends React.Component {
                 <h1 className='heading-primary'>
                     <span className='heading-main'>
                         <span className='letter'>W</span>ine
-                        <span className='letter'>V</span>inyard</span>
+                        <span className='letter'>V</span>ineyard</span>
                     <span className='heading-sub'>is where <span className='word-sub'>taste</span> begins</span>
                 </h1>
                 <WineMenu />

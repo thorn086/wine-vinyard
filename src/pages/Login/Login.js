@@ -50,7 +50,7 @@ class Login extends React.Component{
               <div className='username-login'>
                 <div className='login_demo-creds'>
                   <strong>
-                    Demo credentials: winelover81@gmail.com / Wine@ful1!
+                    Demo credentials: restapp@gmail.com / Food@ful1#
                   </strong>
                 </div>
                 <label htmlFor='username-login'>Email Address</label>

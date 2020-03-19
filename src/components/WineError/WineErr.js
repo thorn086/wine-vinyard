@@ -17,7 +17,7 @@ class WineErr extends React.Component{
     render(){
         if (this.state.hasError){
             return(
-                <h2>Could not add your Note, something is wrong with the Display.</h2>
+                <h2>Could not add your Wine, something is wrong with the Display.</h2>
             );
         }
         return this.props.children;

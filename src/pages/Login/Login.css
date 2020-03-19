@@ -15,18 +15,18 @@ input {
     float: left;
     font-weight:900;
     margin: 8%;
-    color:  #fff290;
+    color:  #5774ebf9;
     text-shadow:1px 1px black;
     font-family: 'Fjalla One', sans-serif;
   }
   
   form {
     margin-top: 15px;
-    background-image: linear-gradient(to right, #c11b76f9, rgb(171, 170, 170) 98%);
+    background-image: linear-gradient(to right, #2049ebf9, rgb(171, 170, 170) 98%);
   }
   
   .errorMessage {
-    color:  #fff290;
+    color:  #fa0303f9;
   }
   
   .login_demo-creds {
@@ -35,7 +35,7 @@ input {
     display: block;
     padding-top: 25px;
     margin: 8%;
-    color: #fff290;
+    color: #5774ebf9;
     text-shadow:1px 1px black;
     font-family: 'Fjalla One', sans-serif;
   }
@@ -60,7 +60,7 @@ input {
 }
 .title__page{
   text-shadow:1px 1px white;
-  color:  #c11b76;
+  color:   #5774ebf9;
   font-family: 'Sriracha', cursive;
 }
 
